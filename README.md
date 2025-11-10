@@ -1,107 +1,32 @@
-# Welcome Ignite 2025 Creators!
-
-Thanks for creating content for Ignite!  Please follow this guidance so all ignite repos have the same look and feel.
-
-## How to contact Skillable?
-
-If you have issues with the Skillable environment, please follow these steps:
-
-1. Open an issue in the [Issues](../../issues) tab using the `New issue` button.
-1. Describe the problem, be descriptive, use screenshots if possible etc.
-1. Tag the following Skillable employees:
-   - @kylerosenthal
-   - @TubaMikeBob
-   - @Naimjones16
-   - @jmbauf
-1. Have all the discussions related to the issue in the issue itself.
-1. Once the issue is resolved, please mark it as Closed.
-
-## Put your docs in the docs folder
-
-This repo is configured for a user to view the docs through mkdocs.
-
-1. update the `mkdocs.yml` file to reference your session. Look particularly for the `site_name`, `site_author`, and `repo_name` tags.
-1. Subfolders in the docs folder will show up as tabs in the navigation bar.
-
-## Guidance
-
-1. Do not turn on github pages for this repo, traffic to github pages isn't captured in our metrics.
-1. Do not store slides or recordings in this repo
-
-## Update the badges!
-
-1. if the foundry discord and github links aren't appropriate for your session you can remove or change them.
-2. See shields.io for how to build your own dynamic or static badge for your community destinations, or other sample repos for how they've done
-3. Please limit your repo to one row of badges under the session title.
-
-## MCP Server
-1. This repo has an mcp.json file and is configured to let agents connect to the Learn MCP Server.
-
-> **Important** Make sure to avoid hardcoding sensitive information like API keys and other credentials by using input variables or environment files.
-
-
-## Update this readme below
-
-1. Fill out the content in this file, below the banner graphic, including the session code.
-2. Please embed links to Learn with your campaign codes!
-3. Add resources for your session to the Resources and Next Steps table
-4. Change the Content Owner section to your info
-5. Change the placeholder session code BRKXXX to your session code.
-
-## Improve SEO
-
-1. Update the Repo Info for this repo 
-    1. Click the gear icon⚙️ in the upper right.
-    1. Set a good description of this repo.
-    1. Add the technologies that you're using in this session.
-
-## Questions?
-
-Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lbugnion@microsoft.com), or surface your question through your content leads.  We are also monitoring issues logged in the repos.
-
-## Finished?
-
-- Remove the folders that you don't need or didn't use, *please don't leave them empty with placeholder readmes*
-- Delete this line and everything above it!
-
 <p align="center">
 <img src="img/Banner-ignite-25.png" alt="decorative banner" width="1200"/>
 </p>
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: Build your own pizza ordering agent
+## 🔥LAB571: Build a Pizza Ordering Agent with Azure AI Foundry and MCP
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/AIFoundryForum-Ignite25)
 
 ### Session Description
 
-*Add Session Description*
+In this hands-on workshop, you’ll learn to build domain-specific AI agents with Azure AI Foundry Agent Service. Starting from a simple agent, you’ll add system prompts, custom instructions, and knowledge with RAG. You’ll extend it with tool calling (like a pizza calculator) and connect external services via MCP for live menu and order handling. By the end, you’ll have a working Contoso PizzaBot that can answer questions, recommend pizzas, and manage orders.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Get hands-on experience with Azure AI Foundry
+- Learn how to build intelligent agents step by step
+- Understand practical use cases for system prompts, RAG, tool calling, and MCP
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Azure AI Foundry
+1. Visual Studio Code
+1. Python
 
-### 🌟 Microsoft Learn MCP Server
-
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Docs_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-The Microsoft Learn MCP Server is a remote MCP Server that enables clients like GitHub Copilot and other AI agents to bring trusted and up-to-date information directly from Microsoft's official documentation. Get started by using the one-click button above for VSCode or access the [mcp.json](.vscode/mcp.json) file included in this repo.
-
-For more information, setup instructions for other dev clients, and to post comments and questions, visit our Learn MCP Server GitHub repo at [https://github.com/MicrosoftDocs/MCP](https://github.com/MicrosoftDocs/MCP). Find other MCP Servers to connect your agent to at [https://mcp.azure.com](https://mcp.azure.com).
-
-*Note: When you use the Learn MCP Server, you agree with [Microsoft Learn](https://learn.microsoft.com/en-us/legal/termsofuse) and [Microsoft API Terms](https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) of Use.*
 
 ### 📚 Resources and Next Steps
 
@@ -113,24 +38,12 @@ For more information, setup instructions for other dev clients, and to post comm
 
 ## Content Owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/hnky">
+        <img src="https://github.com/hnky.png" width="100px;" alt="INSERT NAME HERE"
 "/><br />
-        <sub><b> INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
-    </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
+        <sub><b> Henk Boelman
 </b></sub></a><br />
             <a href="https://github.com/mikekinsman" title="talk">📢</a> 
     </td>
