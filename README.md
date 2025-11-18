@@ -4,26 +4,26 @@
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥LAB571: Build a Pizza Ordering Agent with Azure AI Foundry and MCP
+## 🔥LAB571: Build a Pizza Ordering Agent with Microsoft Foundry and MCP
 
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)
-[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/AIFoundryForum-Ignite25)
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/AIFoundryForum-Ignite25)
 
 ### Session Description
 
-In this hands-on workshop, you’ll learn to build domain-specific AI agents with Azure AI Foundry Agent Service. Starting from a simple agent, you’ll add system prompts, custom instructions, and knowledge with RAG. You’ll extend it with tool calling (like a pizza calculator) and connect external services via MCP for live menu and order handling. By the end, you’ll have a working Contoso PizzaBot that can answer questions, recommend pizzas, and manage orders.
+In this hands-on workshop, you’ll learn to build domain-specific AI agents with Foundry Agent Service. Starting from a simple agent, you’ll add system prompts, custom instructions, and knowledge with RAG. You’ll extend it with tool calling (like a pizza calculator) and connect external services via MCP for live menu and order handling. By the end, you’ll have a working Contoso PizzaBot that can answer questions, recommend pizzas, and manage orders.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
-- Get hands-on experience with Azure AI Foundry
+- Get hands-on experience with Microsoft Foundry
 - Learn how to build intelligent agents step by step
 - Understand practical use cases for system prompts, RAG, tool calling, and MCP
 
 ### 💻 Technologies Used
 
-1. Azure AI Foundry
+1. Microsoft Foundry
 1. Visual Studio Code
 1. Python
 
@@ -33,9 +33,9 @@ By the end of this session, learners will be able to:
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
 | Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for Ignite 2025 Sessions |
-| Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)| Connect with the Azure AI Foundry Community! |
+| Microsoft Foundry Community Discord | [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)| Connect with the Microsoft Foundry Community! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
-| Azure AI Foundry SDK | [https://aka.ms/aifoundrysdk](https://aka.ms/aifoundrysdk) | Explore the Azure AI Foundry SDK Client Libraries
+| Microsoft Foundry SDK | [https://aka.ms/aifoundrysdk](https://aka.ms/aifoundrysdk) | Explore the Microsoft Foundry SDK Client Libraries
 
 ## Content Owners
 
