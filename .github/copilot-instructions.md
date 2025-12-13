@@ -7,6 +7,12 @@
 **Primary Technologies**: Microsoft Foundry, Python, MCP (Model Context Protocol), RAG, Tool Calling  
 **Repository**: https://github.com/microsoft/ignite25-LAB571-build-a-pizza-ordering-agent-with-microsoft-foundry-and-mcp
 
+### Enterprise Custom Agents Setup
+- Workshop operates within an Enterprise org using GitHub Enterprise custom agents.
+- Central org agents live in AICraftWorksOrg/.github-private → `.github/agents`.
+- Repo `.github/agents` are auto-synced from `.github-private/agents` and should be treated as read-only.
+- To update/add agents for the workshop, edit `.github-private/agents`; CI mirrors changes.
+
 ### Lab Overview
 
 This workshop guides learners through building Contoso PizzaBot - a domain-specific AI agent that can:
