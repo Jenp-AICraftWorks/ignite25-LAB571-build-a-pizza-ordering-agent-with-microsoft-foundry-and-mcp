@@ -421,3 +421,6 @@ FodyWeavers.xsd
 site/
 .cache/
 
+# Synced custom agents from .github-private (auto-synced, not source-controlled)
+.github/agents/
+
