@@ -26,22 +26,20 @@ This workshop guides learners through building Contoso PizzaBot - a domain-speci
 
 ```
 ignite25-LAB571/
-├── lab/                # Step-by-step lab instructions (1.md through 7.md)
-├── docs/               # Supporting documentation and resources
+├── lab/                # Step-by-step lab instructions (1.md through 6.md)
+│   └── foundry/        # Foundry-related screenshots and images
 ├── img/                # Banner images and screenshots
-├── src/                # Python source code for the agent
 ├── requirements.txt    # Python dependencies
 └── README.md
 ```
 
 **Key Lab Steps**:
-- `lab/1.md` - Introduction to Microsoft Foundry
-- `lab/2.md` - Building your first agent
-- `lab/3.md` - Adding system prompts and custom instructions
+- `lab/1.md` - Welcome and introduction
+- `lab/2.md` - Create your first agent
+- `lab/3.md` - System prompts and custom instructions
 - `lab/4.md` - Knowledge integration with RAG
 - `lab/5.md` - Tool calling (pizza calculator)
 - `lab/6.md` - MCP integration for external services
-- `lab/7.md` - Testing and deployment
 
 ## Coding Agent Orchestration: Environment-Based Multi-Agent Strategy
 
@@ -214,44 +212,22 @@ cd ignite25-LAB571-build-a-pizza-ordering-agent-with-microsoft-foundry-and-mcp
 
 # Install Python dependencies
 pip install -r requirements.txt
-
-# Configure environment variables
-cp .env.example .env
-# Edit .env with your Foundry API keys
-
-# Verify setup
-python src/verify_setup.py
 ```
 
 ### Running the Workshop
 
-**Local Development**:
-```bash
-# Start the agent locally
-python src/agent.py
-
-# Test MCP integration
-python src/test_mcp.py
-```
-
 **GitHub Codespaces** (recommended for learners):
 1. Open repository in GitHub Codespaces
 2. Dependencies auto-install via devcontainer.json
-3. Follow lab instructions in `lab/` folder
+3. Follow lab instructions in `lab/` folder (start with `lab/1.md`)
 
 ### Testing Lab Instructions
 
 **Manual Testing**:
-1. Follow each lab step sequentially
+1. Follow each lab step sequentially (starting with `lab/1.md`)
 2. Verify all code samples execute successfully
-3. Test all MCP endpoints
+3. Test all MCP endpoints as described in the lab instructions
 4. Validate agent responses match expectations
-
-**Automated Validation** (if available):
-```bash
-# Run lab validation script
-python scripts/validate_lab.py
-```
 
 ## Workshop-Specific Guidelines
 
@@ -303,7 +279,6 @@ python scripts/validate_lab.py
 
 - [Microsoft Foundry Documentation](https://aka.ms/aifoundrysdk)
 - [MCP Protocol Specification](https://modelcontextprotocol.io)
-- [Workshop Troubleshooting Guide](./docs/troubleshooting.md)
 - [Ignite 2025 Session Materials](https://aka.ms/Ignite25-Next-Steps)
 
 ## Contact
