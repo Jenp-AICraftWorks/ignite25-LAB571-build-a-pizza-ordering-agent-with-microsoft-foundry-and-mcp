@@ -1,0 +1,123 @@
+{
+  "version": "3.0",
+  "name": "LAB571-Pizza-Agent-Workshop",
+  "description": "ClaudeFlow v3.0 configuration for LAB571 Pizza Ordering Agent workshop",
+  
+  "agents": {
+    "enabled": [
+      "code-reviewer",
+      "documentation-expert",
+      "test-specialist",
+      "security-specialist",
+      "azure-specialist"
+    ],
+    "defaults": {
+      "timeout": 300,
+      "retries": 2,
+      "logLevel": "info"
+    }
+  },
+  
+  "swarm": {
+    "maxConcurrentAgents": 5,
+    "coordinationMode": "hive-mind",
+    "failureStrategy": "continue-on-error"
+  },
+  
+  "mcp": {
+    "enabled": true,
+    "servers": {
+      "foundry": {
+        "endpoint": "${FOUNDRY_ENDPOINT}",
+        "apiKey": "${FOUNDRY_API_KEY}",
+        "timeout": 60
+      }
+    },
+    "tools": [
+      "pizza_calculator",
+      "order_management",
+      "menu_retrieval"
+    ]
+  },
+  
+  "memory": {
+    "enabled": true,
+    "path": "${CLAUDE_FLOW_MEMORY_PATH}",
+    "retention": "30d",
+    "backup": {
+      "enabled": true,
+      "frequency": "daily"
+    }
+  },
+  
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "agentUtilization": true,
+      "taskCompletionTime": true,
+      "successRate": true,
+      "costTracking": true
+    },
+    "logging": {
+      "level": "${CLAUDE_FLOW_LOG_LEVEL}",
+      "format": "json",
+      "destination": ".claude-flow/logs/"
+    }
+  },
+  
+  "workflows": {
+    "lab-validation": {
+      "description": "Validate lab instructions and code samples",
+      "steps": [
+        {
+          "name": "documentation-review",
+          "agent": "documentation-expert",
+          "task": "Review all lab instructions for clarity and completeness",
+          "timeout": 300
+        },
+        {
+          "name": "code-validation",
+          "agent": "code-reviewer",
+          "task": "Validate all Python code samples",
+          "dependsOn": ["documentation-review"],
+          "timeout": 300
+        },
+        {
+          "name": "security-audit",
+          "agent": "security-specialist",
+          "task": "Review for security vulnerabilities",
+          "dependsOn": ["code-validation"],
+          "timeout": 300
+        }
+      ]
+    },
+    
+    "workshop-deployment": {
+      "description": "Full workshop validation and deployment",
+      "mode": "parallel",
+      "agents": [
+        "code-reviewer",
+        "documentation-expert",
+        "test-specialist",
+        "security-specialist",
+        "azure-specialist"
+      ],
+      "task": "Complete validation of LAB571 workshop materials"
+    }
+  },
+  
+  "security": {
+    "auditLog": {
+      "enabled": true,
+      "path": ".claude-flow/audit.log"
+    },
+    "secretsManagement": {
+      "useEnvironmentVariables": true,
+      "allowedKeys": [
+        "ANTHROPIC_API_KEY",
+        "FOUNDRY_API_KEY",
+        "FOUNDRY_ENDPOINT"
+      ]
+    }
+  }
+}
