@@ -23,6 +23,14 @@ This repository is one of several for Microsoft Ignite 2025 sessions and should:
 - Include proper documentation for the customer
 - Support MkDocs documentation generation
 - Enable Learn MCP (Model Context Protocol) server integration
+- Showcase GitHub Copilot SDK integration opportunities with local AI models
+
+### New Features (2025)
+**GitHub Copilot SDK with Local Models**:
+- This repository now includes comprehensive documentation for using the GitHub Copilot SDK (2024-2025 release)
+- Demonstrates local AI model integration using Microsoft Foundry Local and AI Toolkit
+- Provides privacy-focused, cost-efficient alternatives for AI-assisted development
+- See [docs/GITHUB_COPILOT_SDK_LOCAL_MODELS.md](docs/GITHUB_COPILOT_SDK_LOCAL_MODELS.md) for complete guide
 
 ### Consistent Experience
 - Maintain the existing folder structure (`docs/`, `src/`, `lab/`, etc.)

@@ -14,6 +14,7 @@ Welcome to the LAB571 documentation! This index helps you find the right resourc
    - [lab/4.md](../lab/4.md) - Knowledge integration with RAG
    - [lab/5.md](../lab/5.md) - Tool calling (pizza calculator)
    - [lab/6.md](../lab/6.md) - MCP integration for external services
+   - [lab/7.md](../lab/7.md) - ⭐ NEW: Optional - GitHub Copilot SDK with local models
 
 ### For Contributors and Developers
 
@@ -134,7 +135,8 @@ ignite25-LAB571/
     ├── 3.md                          # System prompts
     ├── 4.md                          # RAG integration
     ├── 5.md                          # Tool calling
-    └── 6.md                          # MCP integration
+    ├── 6.md                          # MCP integration
+    └── 7.md                          # ⭐ NEW: Optional - Local AI models
 ```
 
 ## External Resources
