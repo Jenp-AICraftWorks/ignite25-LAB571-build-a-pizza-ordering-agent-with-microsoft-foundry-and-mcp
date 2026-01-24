@@ -36,6 +36,7 @@ By the end of this session, learners will be able to:
 | Microsoft Foundry Community Discord | [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://aka.ms/MicrosoftFoundry-Ignite25)| Connect with the Microsoft Foundry Community! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
 | Microsoft Foundry SDK | [https://aka.ms/aifoundrysdk](https://aka.ms/aifoundrysdk) | Explore the Microsoft Foundry SDK Client Libraries |
+| **GitHub Copilot SDK with Local Models** | **[docs/GITHUB_COPILOT_SDK_LOCAL_MODELS.md](docs/GITHUB_COPILOT_SDK_LOCAL_MODELS.md)** | **Use GitHub Copilot SDK with local AI models for privacy and cost efficiency** |
 | ClaudeFlow Setup Guide | [CLAUDEFLOW_SETUP.md](CLAUDEFLOW_SETUP.md) | Set up ClaudeFlow v3.0 in your Codespace |
 | Work Delegation Guide | [DELEGATION_GUIDE.md](DELEGATION_GUIDE.md) | Learn how to delegate work to ClaudeFlow agents |
 | Agent Orchestration | [docs/AGENT_ORCHESTRATION.md](docs/AGENT_ORCHESTRATION.md) | Architecture and best practices for agent coordination |
