@@ -280,6 +280,8 @@ pip install -r requirements.txt
 - [Microsoft Foundry Documentation](https://aka.ms/aifoundrysdk)
 - [MCP Protocol Specification](https://modelcontextprotocol.io)
 - [Ignite 2025 Session Materials](https://aka.ms/Ignite25-Next-Steps)
+- [GitHub Copilot SDK](https://github.com/github/copilot-sdk)
+- [GitHub Copilot SDK with Local Models Guide](../docs/GITHUB_COPILOT_SDK_LOCAL_MODELS.md)
 
 ## Contact
 

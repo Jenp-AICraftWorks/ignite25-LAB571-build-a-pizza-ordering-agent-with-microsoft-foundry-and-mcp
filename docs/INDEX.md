@@ -14,12 +14,14 @@ Welcome to the LAB571 documentation! This index helps you find the right resourc
    - [lab/4.md](../lab/4.md) - Knowledge integration with RAG
    - [lab/5.md](../lab/5.md) - Tool calling (pizza calculator)
    - [lab/6.md](../lab/6.md) - MCP integration for external services
+   - [lab/7.md](../lab/7.md) - ⭐ NEW: Optional - GitHub Copilot SDK with local models
 
 ### For Contributors and Developers
 
 3. **[CLAUDEFLOW_SETUP.md](../CLAUDEFLOW_SETUP.md)** - Complete guide to setting up ClaudeFlow v3.0 in Codespaces
 4. **[DELEGATION_GUIDE.md](../DELEGATION_GUIDE.md)** - How to delegate work to ClaudeFlow agents with examples
 5. **[AGENT_ORCHESTRATION.md](AGENT_ORCHESTRATION.md)** - Architecture and best practices for multi-agent coordination
+6. **[GITHUB_COPILOT_SDK_LOCAL_MODELS.md](GITHUB_COPILOT_SDK_LOCAL_MODELS.md)** - ⭐ NEW: Using GitHub Copilot SDK with local AI models
 
 ## Quick Access
 
@@ -36,6 +38,13 @@ Welcome to the LAB571 documentation! This index helps you find the right resourc
 - **ClaudeFlow Agents**: [AGENT_ORCHESTRATION.md § ClaudeFlow v3.0 Orchestration](AGENT_ORCHESTRATION.md#claudeflow-v30-orchestration)
 - **Execution Modes**: [AGENT_ORCHESTRATION.md § Execution Modes](AGENT_ORCHESTRATION.md#execution-modes)
 - **Integration Patterns**: [AGENT_ORCHESTRATION.md § Integration Patterns](AGENT_ORCHESTRATION.md#integration-patterns)
+
+### Advanced Topics
+
+- **⭐ GitHub Copilot SDK**: [GITHUB_COPILOT_SDK_LOCAL_MODELS.md § What is the GitHub Copilot SDK](GITHUB_COPILOT_SDK_LOCAL_MODELS.md#what-is-the-github-copilot-sdk)
+- **⭐ Local AI Models**: [GITHUB_COPILOT_SDK_LOCAL_MODELS.md § Local AI Model Support](GITHUB_COPILOT_SDK_LOCAL_MODELS.md#local-ai-model-support)
+- **⭐ Foundry Local Setup**: [GITHUB_COPILOT_SDK_LOCAL_MODELS.md § Setup Guide](GITHUB_COPILOT_SDK_LOCAL_MODELS.md#setup-guide-visual-studio-code--foundry-local)
+- **⭐ Ollama Alternative**: [GITHUB_COPILOT_SDK_LOCAL_MODELS.md § Alternative: Ollama](GITHUB_COPILOT_SDK_LOCAL_MODELS.md#alternative-ollama-for-local-models)
 
 ### Usage Examples
 
@@ -109,7 +118,8 @@ ignite25-LAB571/
 │
 ├── docs/
 │   ├── INDEX.md                      # This file
-│   └── AGENT_ORCHESTRATION.md        # Architecture guide
+│   ├── AGENT_ORCHESTRATION.md        # Architecture guide
+│   └── GITHUB_COPILOT_SDK_LOCAL_MODELS.md  # ⭐ NEW: Copilot SDK + local models
 │
 ├── .github/
 │   ├── copilot-instructions.md       # Copilot agent instructions
@@ -125,7 +135,8 @@ ignite25-LAB571/
     ├── 3.md                          # System prompts
     ├── 4.md                          # RAG integration
     ├── 5.md                          # Tool calling
-    └── 6.md                          # MCP integration
+    ├── 6.md                          # MCP integration
+    └── 7.md                          # ⭐ NEW: Optional - Local AI models
 ```
 
 ## External Resources
