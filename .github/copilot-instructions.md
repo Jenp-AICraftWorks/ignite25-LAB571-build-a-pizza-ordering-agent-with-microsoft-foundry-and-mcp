@@ -74,6 +74,39 @@ GitHub Copilot Coding Agent enables environment-specific orchestration. Use this
 - Blocking agents: ALL (zero-tolerance for workshop issues)
 - Example: "Deploy workshop materials for Ignite 2025 / @release-manager @documentation-expert @security-auditor"
 
+### Customer Portal Work - Staging-First Policy
+
+**IMPORTANT**: All Customer Portal related work must follow a staging-first deployment strategy:
+
+**Policy Requirements**:
+- **Staging Only**: All Customer Portal PRs must target the `staging` branch until the Customer Portal work is fully complete and validated
+- **No Direct Production**: Customer Portal work must NOT be merged to production/main branches until explicitly approved
+- **Full Validation Required**: Customer Portal must undergo complete end-to-end testing in staging environment before production promotion
+- **Readiness Criteria**: Portal work is considered "ready for production" only when:
+  - All portal features are complete and tested
+  - Security review has been completed by `@security-specialist` and `@security-auditor`
+  - Performance testing shows acceptable metrics
+  - Integration testing with all dependencies passes
+  - User acceptance testing (UAT) is complete
+  - Documentation is finalized
+  - Rollback plan is documented and validated
+
+**PR Workflow for Customer Portal**:
+1. Create feature branch from `staging`
+2. Submit PR targeting `staging` branch (NOT production/main)
+3. Complete staging environment review (7-8 agents as defined above)
+4. Merge to staging for validation
+5. After full validation and approval, create separate PR from `staging` to production
+6. Production PR requires all 9-10 blocking agents approval
+
+**Example PR Titles**:
+- ✅ CORRECT: "[Portal] Add user authentication - TARGET: staging"
+- ✅ CORRECT: "[Portal] Customer dashboard - Staging deployment"
+- ❌ INCORRECT: "[Portal] Add user authentication - TARGET: main"
+- ❌ INCORRECT: "[Portal] Customer dashboard" (without staging specification)
+
+**Non-Portal Work**: Standard workshop content and lab materials can follow normal PR workflows as defined in the 4-Tier strategy above.
+
 ---
 
 ## Agent Definitions (10 Core Agents)
@@ -191,6 +224,22 @@ When submitting a PR involving infrastructure, security, or deployment configura
 - [ ] **@security-specialist** assigned for API key handling
 - [ ] **@documentation-expert** assigned for lab instruction updates
 - [ ] **@test-specialist** assigned for workshop validation
+
+### Customer Portal Specific (If Applicable)
+- [ ] **PR targets `staging` branch** (NOT main/production)
+- [ ] PR title includes "[Portal]" prefix for clear identification
+- [ ] All Customer Portal features complete before production consideration
+- [ ] End-to-end testing completed in staging environment
+- [ ] User acceptance testing (UAT) documented and passed
+- [ ] Security review by both `@security-specialist` AND `@security-auditor` complete
+- [ ] Performance testing shows acceptable response times and load handling
+- [ ] Integration testing with all portal dependencies verified
+- [ ] Rollback plan specific to portal changes documented
+- [ ] Production promotion requires explicit approval from `@release-manager`
+- [ ] Staging validation period completed (minimum recommended time TBD)
+- [ ] All portal documentation finalized and reviewed
+
+**Note**: Customer Portal work must remain in staging until ALL checklist items are complete and work is explicitly approved for production deployment.
 
 ---
 
